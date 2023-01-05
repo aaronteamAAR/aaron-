@@ -18,6 +18,9 @@ h2{
     width: 50%;
 }
 
+.social_icons > div{
+    margin: 2em;
+}
 
 .contact_links >  span > a{
     text-decoration: none;
