@@ -7,11 +7,12 @@
    margin-top: 0.6em;
 }
 
-.navbar{
+.navbar1{
     display: flex;
     list-style: none;
     gap: 3em;
     float: right;
+    margin-top: 1em;
     justify-content: space-between;
 }
 

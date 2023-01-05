@@ -15,28 +15,29 @@ h2{
 }
 
 .contact_links{
-    width: 100%;
+    width: 50%;
 }
 
-.contact_links > mark > span > a{
+
+.contact_links >  span > a{
     text-decoration: none;
     color: black;
 }
 
-.contact_links > mark > span > a{
+.contact_links >  span > a{
     text-decoration: underline;
 }
  mark{
     background-color: transparent;
  }
 
-.footer{
+.footer1{
     background-color: var(--white);
     height: 320px;
     position: absolute;
     top: 1140px;
-    width: 95%;
-    
+    width: 50%;
+    left: 34em;
 }
 
 
@@ -57,7 +58,7 @@ h2{
         gap: 3em;
     }
 
-    .footer{
+    .footer1{
         left: 2.7em;
     }
 
