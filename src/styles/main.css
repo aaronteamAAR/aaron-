@@ -3,6 +3,13 @@
 :root{
     --dark-black: black;
     --light-dark:rgb(90, 90, 90);
+    --font-size-l: 20px;
+    --font-size-m: 17px;
+    --font-size-xl: 27px;
+    --font-size-xxl: 30px;
+    --font-size-xxxl: 32px;
+    --font-size-xxxxl: 65px;
+    --font-size-xxxxxl: 100px;
 }
 
 
@@ -28,14 +35,13 @@
 
 .desc-h1{
     margin-top: 0.5rem;
-    font-size: 4em;
+    font-size: var(--font-size-xxxxl);
     font-family: 'Manrope', sans-serif;
     font-weight: 900;
     letter-spacing: -2px;
 }
 
 .card{
-    
     align-items: center;
     background-color: transparent;
     display: flex;
@@ -49,7 +55,8 @@
 }
 
 .card_title{
-    font-weight: 500;
+    font-weight: 600;
+    font-size: var(--font-size-l);
 }
 
 .card_text{

@@ -1,0 +1,18 @@
+
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 1050px;
+    left: 19em;
+    gap: 7em;
+}
+
+.more_content{
+    position: absolute;
+    top: 1300px;
+    left: 35em;
+    text-decoration: underline;
+    font-size: var(--font-size-l);
+}
