@@ -38,7 +38,7 @@ h2{
     background-color: var(--white);
     height: 320px;
     position: absolute;
-    top: 1360px;
+    top: 1500px;
     width: 50%;
     left: 34em;
 }
@@ -47,10 +47,9 @@ h2{
 @media screen and (max-width:600px) {
     .contact{
         position: absolute;
-        top: 56em;
+        top: 86em;
         flex-direction: column;
         gap: 5em;
-        left: 39%;
         padding-bottom: 12em;
         text-align: center;
     }
@@ -58,21 +57,19 @@ h2{
     .social_icons{
         display: flex;
         flex-direction: column;
-        gap: 3em;
+        gap: 1em;
     }
 
+    .contact_links{
+        min-width: 100%;
+    }
     .footer1{
-        left: 2.7em;
+        left: 11em;
     }
 
     .reach_out{
         position: absolute;
         top: 19em;
-        padding: 7em 0 12em 0 
-    }
-
-    .contact_links > mark > h2{
-      text-align: center;
-      
+        padding: 7em 0 12em 0;
     }
 }

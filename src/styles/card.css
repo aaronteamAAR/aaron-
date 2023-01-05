@@ -11,8 +11,18 @@
 
 .more_content{
     position: absolute;
-    top: 1300px;
+    top: 1400px;
     left: 35em;
     text-decoration: underline;
     font-size: var(--font-size-l);
+}
+
+
+
+@media screen and (max-width:600px) {
+    .projects{
+        flex-direction: column;
+        top: 1900px;
+        left: 8em;
+    }
 }
