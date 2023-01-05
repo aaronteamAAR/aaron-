@@ -18,8 +18,10 @@
 
 
 @media  screen and (max-width:600px) {
-    .navbar{
-        margin-right: -10em;
+    .navbar1{
+        margin-right: -9em;
         gap: 2em;
     }
 }
+
+

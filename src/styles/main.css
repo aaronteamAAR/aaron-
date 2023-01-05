@@ -79,7 +79,7 @@
     }
 
     .desc-h1{
-        font-size: 3.8em;
+        font-size: var(--font-size-xxxxl);
     }
 
     .desc-text{
@@ -95,5 +95,16 @@
     .group2{
         flex-direction: column-reverse;
         left: 39%;
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    .group1{
+        left: calc(50.00% - 226px);
+    }
+
+    .group2{
+        left: 30%;
     }
 }

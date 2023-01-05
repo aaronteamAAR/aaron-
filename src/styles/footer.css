@@ -47,7 +47,7 @@ h2{
 @media screen and (max-width:600px) {
     .contact{
         position: absolute;
-        top: 86em;
+        top: 92em;
         flex-direction: column;
         gap: 5em;
         padding-bottom: 12em;
@@ -60,16 +60,27 @@ h2{
         gap: 1em;
     }
 
-    .contact_links{
-        min-width: 100%;
-    }
     .footer1{
         left: 11em;
     }
 
+    .contact_links{
+        width: 100%;
+        margin-left: -2em;
+    }
     .reach_out{
         position: absolute;
-        top: 19em;
-        padding: 7em 0 12em 0;
+        top: 20em;
+        padding: 7em 0 12em 0 
     }
+
+    .contact_links > mark > h2{
+      text-align: center;
+     
+    }
+}
+
+
+@media screen and (max-width:769px) {
+  
 }
