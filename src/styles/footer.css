@@ -1,0 +1,74 @@
+
+h2{
+    font-weight: 600;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8em;
+}
+
+.contact_bold{
+    color: rgb(34, 146, 34);
+}
+
+.contact_links{
+    width: 100%;
+}
+
+.contact_links > mark > span > a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact_links > mark > span > a{
+    text-decoration: underline;
+}
+ mark{
+    background-color: transparent;
+ }
+
+.footer{
+    background-color: var(--white);
+    height: 320px;
+    position: absolute;
+    top: 1140px;
+    width: 95%;
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .contact{
+        position: absolute;
+        top: 56em;
+        flex-direction: column;
+        gap: 5em;
+        left: 39%;
+        padding-bottom: 12em;
+        text-align: center;
+    }
+
+    .social_icons{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .footer{
+        left: 2.7em;
+    }
+
+    .reach_out{
+        position: absolute;
+        top: 19em;
+        padding: 7em 0 12em 0 
+    }
+
+    .contact_links > mark > h2{
+      text-align: center;
+      
+    }
+}

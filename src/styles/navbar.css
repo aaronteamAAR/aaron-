@@ -1,0 +1,24 @@
+
+
+
+
+.logo{
+    position: absolute;
+   margin-top: 0.6em;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    float: right;
+    justify-content: space-between;
+}
+
+
+@media  screen and (max-width:600px) {
+    .navbar{
+        margin-right: -10em;
+        gap: 2em;
+    }
+}
