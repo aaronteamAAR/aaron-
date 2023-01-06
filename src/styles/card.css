@@ -33,7 +33,7 @@
 }
 
 
-/* @media screen and (max-width:769px) {
+@media screen and (min-width:768px) and (max-width:900px) {
     .projects{
         flex-direction: column;
         top: 1900px;
@@ -44,4 +44,4 @@
         top: 2900px;
         left: 9em;
     }
-} */
+} 

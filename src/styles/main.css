@@ -100,7 +100,7 @@
 
 /* Tablet view  */
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:900px) {
     .group1{
         left: calc(50.00% - 226px);
     }
