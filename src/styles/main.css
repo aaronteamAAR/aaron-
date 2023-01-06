@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;700;900&family=IBM+Plex+Sans:wght@100;200;300;500;700&display=swap');
 
 :root{
     --dark-black: black;
-    --light-dark:rgb(90, 90, 90);
+    --light-dark:#666666;
     --font-size-l: 20px;
     --font-size-m: 17px;
     --font-size-xl: 27px;
     --font-size-xxl: 30px;
     --font-size-xxxl: 32px;
-    --font-size-xxxxl: 65px;
-    --font-size-xxxxxl: 100px;
+    --font-size-xxxxl: 42px;
+    --font-size-xxxxxl: 65px;
+    --font-size-xxxxxxl: 100px;
 }
 
 
@@ -41,6 +42,9 @@
     letter-spacing: -2px;
 }
 
+.desc-text{
+    color: var(--light-dark);
+}
 .card{
     align-items: center;
     background-color: transparent;
@@ -100,12 +104,26 @@
 
 /* Tablet view  */
 
-@media screen and (min-width:768px) and (max-width:900px) {
+@media screen and (min-width:481px) and (max-width:900px) {
     .group1{
-        left: calc(50.00% - 226px);
+        left: calc(50.00% - 276px);
     }
 
     .group2{
-        left: 39%;
+        top: 40em;
+        left: 10%;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .group1{
+        top: calc(50.00% - 488px);
+        left: calc(50.00% - 256px);
+    }
+
+    .group2{
+        left: 10%;   
     }
 }

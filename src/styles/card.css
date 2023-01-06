@@ -14,6 +14,7 @@
     top: 1400px;
     left: 35em;
     text-decoration: underline;
+    color: var(--light-dark);
     font-size: var(--font-size-l);
 }
 
@@ -35,13 +36,25 @@
 
 @media screen and (min-width:768px) and (max-width:900px) {
     .projects{
-        flex-direction: column;
-        top: 1900px;
-        left: 8em;
+        zoom: 0.9;
+        flex-direction: row;
+        top: 1400px;
+        left: 1em;
     }
 
     .more_content{
-        top: 2900px;
-        left: 9em;
+        padding-bottom: 23em;
+        top: 1600px;
+        left: 21em;
     }
 } 
+
+@media screen and (min-width: 900px){
+    .projects{
+        left: 3em;
+    }
+
+    .more_content{
+        left: 24em;
+    }
+}
