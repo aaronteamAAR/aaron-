@@ -71,7 +71,7 @@
     width: 100%;
 }
 
-
+/* Mobile view  */
 
 @media  screen and (max-width:600px) {
     .group1{
@@ -98,13 +98,14 @@
     }
 }
 
+/* Tablet view  */
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:768px) {
     .group1{
         left: calc(50.00% - 226px);
     }
 
     .group2{
-        left: 30%;
+        left: 39%;
     }
 }

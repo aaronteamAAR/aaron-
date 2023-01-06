@@ -31,3 +31,17 @@
         left: 9em;
     }
 }
+
+
+/* @media screen and (max-width:769px) {
+    .projects{
+        flex-direction: column;
+        top: 1900px;
+        left: 8em;
+    }
+
+    .more_content{
+        top: 2900px;
+        left: 9em;
+    }
+} */
