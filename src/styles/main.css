@@ -28,6 +28,7 @@
     position: relative;
     top: 34em;
     width: 100%;
+    left: 2em;
     display: flex;
     flex-direction: row;
     gap: 12em;
@@ -119,7 +120,7 @@
 
 
 
-@media screen and (min-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .group1{
         top: calc(50.00% - 488px);
         left: calc(50.00% - 256px);
@@ -128,4 +129,4 @@
     .group2{
         left: 10%;   
     }
-}
+} */
