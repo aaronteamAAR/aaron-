@@ -1,0 +1,5 @@
+---
+import type {Post} from '../types';
+
+const post = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
+---
