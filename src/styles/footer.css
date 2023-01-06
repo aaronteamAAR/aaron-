@@ -60,19 +60,20 @@ h2{
         left: 11em;
     }
 
+    .social_icons > div{
+        margin-left: 3em;
+    }
+
+
     .contact_links{
         width: 100%;
-        margin-left: -2em;
+        margin-left: -4em;
     }
     .reach_out{
         position: absolute;
         top: 24em;
+        margin-left: 5em;
         padding: 7em 0 12em 0 
-    }
-
-    .contact_links > mark > h2{
-      text-align: center;
-     
     }
 }
 

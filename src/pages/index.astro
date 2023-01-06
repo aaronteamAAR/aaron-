@@ -3,14 +3,30 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 import Project from '../components/Projects.astro';
-import Navbar from '../components/Navbar.astro';
+import Header from '../components/Header.astro';
+import Logo from '../components/Logo.astro';
 
 import '../styles/main.css'
 ---
 
 <Layout title="	Home -> aaronspace.studio">
 	<main>
-		<Navbar />
+		<Logo />
+		<Header links={[
+			{
+			href: '/',
+			title: "Blog"
+		},
+		{
+			href: '/projects',
+			title: "Projects"
+		},
+        {
+			href:'/jokes',
+			title: "jokes"
+		}
+		]
+		}/>
 		<!-- content  -->
 		<div class="group1">
 			<div class="sub-desc">yo i'm aaron👋🏿</div>
@@ -53,3 +69,9 @@ import '../styles/main.css'
 	<Card />
 	<Footer />
 </Layout>
+
+<style>
+	b{
+		color: rgb(73, 170, 121);
+	}
+</style>

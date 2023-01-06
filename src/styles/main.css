@@ -80,6 +80,8 @@
 @media  screen and (max-width:600px) {
     .group1{
         left: calc(50.00% - 150px);
+        top: 23em;
+        margin-top: -12em;
     }
 
     .desc-h1{
