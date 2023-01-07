@@ -16,16 +16,16 @@ ECMAScript is the standardized specification for the scripting language that is 
 
 1. Optional chaining, which allows developers to access properties of deeply nested objects without having to check for null or undefined at each level.
 
-```
-// Without optional chaining
-if (user && user.address && user.address.city) {
-  console.log(user.address.city);
-}
+    ```js
+    // Without optional chaining
+    if (user && user.address && user.address.city) {
+    console.log(user.address.city);
+    }
 
-// With optional chaining
-console.log(user?.address?.city);
+    // With optional chaining
+    console.log(user?.address?.city);
 
-```
+    ```
 
 In this code, we use optional chaining to access the city property of a user object. If the user object is null or undefined, or if the address property is null or undefined, the code will not throw an error and the city property will not be accessed. Instead, the expression will simply return null or undefined, and no further processing will be done
 
@@ -36,7 +36,7 @@ Optional chaining is a new feature in ECMAScript 2022, and it can make it easier
 
 
 
-```
+```js
 // Without nullish coalescing
 let userName = "";
 if (user && user.name) {
@@ -58,7 +58,7 @@ Nullish coalescing is a new feature in ECMAScript 2022, and it can make it easie
 <br />
 3. Asynchronous iteration, which allows developers to use the for-await-of loop to iterate over asynchronous iterables in a synchronous manner.
 
-```
+```js
 async function getUserNames() {
   const users = await fetchUsers(); // Assume this returns a list of users
 
