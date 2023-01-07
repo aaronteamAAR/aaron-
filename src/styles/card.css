@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 1050px;
+    top: 65.256em;
     left: 19em;
     gap: 7em;
 }
 
 .more_content{
     position: absolute;
-    top: 1400px;
+    top: 87.5em;
     left: 35em;
     text-decoration: underline;
     color: var(--light-dark);
@@ -23,12 +23,12 @@
 @media screen and (max-width:600px) {
     .projects{
         flex-direction: column;
-        top: 1900px;
+        top: 118.75em;
         left: 8em;
     }
 
     .more_content{
-        top: 2900px;
+        top: 181.25em;
         left: 11em;
     }
 }
@@ -38,13 +38,13 @@
     .projects{
         zoom: 0.9;
         flex-direction: row;
-        top: 1400px;
+        top: 87.5em;
         left: 1em;
     }
 
     .more_content{
         padding-bottom: 23em;
-        top: 1600px;
+        top: 100em;
         left: 21em;
     }
 } 

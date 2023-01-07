@@ -32,9 +32,9 @@ h2{
 
 .footer1{
     background-color: var(--white);
-    height: 320px;
+    height: 20em;
     position: absolute;
-    top: 1500px;
+    top: 93.75em;
     width: 50%;
     left: 34em;
 }
@@ -93,7 +93,7 @@ h2{
  }
  .footer1{
     left: 16em;
-    top: 1700px;
+    top: 106.25em;
     margin-bottom: 13em;
  }
 } 

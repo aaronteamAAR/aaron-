@@ -1,5 +1,43 @@
 ---
 import type {Post} from '../types';
-
-const post = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+import '../styles/blog.css'
+import Header from '../components/Header.astro';
+const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
+   .filter((post) => !post.frontmatter.draft)
+   .sort(
+    (a,b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+   )
 ---
+
+<Layout title="/blogs">
+  <Logo />
+  <Header links={[
+    {
+    href: '/blog',
+    title: "Blog"
+  },
+  {
+    href: '/projects',
+    title: "Projects"
+  },
+      {
+    href:'/jokes',
+    title: "jokes"
+  }
+  ]
+  }/>
+<main class="max-w-6xl lg:ml-auto lg:mr-auto mr-5 ml-5">
+  <br />
+<p class="text-3xl font-bold">Read my blogs written in md !</p>
+
+<div class="flex flex-col">
+  
+</div>
+</main>
+</Layout>
+
+

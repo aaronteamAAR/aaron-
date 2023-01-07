@@ -17,10 +17,10 @@
 
 .group1{
     background-color: transparent;
-    height: 384px;
-    left: calc(50.00% - 540px);
+    height: 24em;
+    left: calc(50.00% - 33.75em);
     position: absolute;
-    top: calc(50.00% - 194px);
+    top: calc(50.00% - 12.125em);
     width: 470px;
 }
 
