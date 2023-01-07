@@ -1,5 +1,6 @@
 ---
 import Layout from "./Layout.astro";
+import '../styles/blog.css'
 // console.log(frontmatter)
 export interface Props {
   content: {
@@ -15,5 +16,15 @@ const {
 ---
 
 <Layout title={title}>
-    <slot />
+    <div class="flex flex-col items-center text-center">
+        <h1 class="h1_text">{title}</h1>
+        <p class="text-lg text-lightdark font-semibold">
+          {description}
+        </p>
+        <p class="text-sm">{pubDate} - {readingTime}</p>
+    </div>
+    <div class="main-blog">
+        <slot />
+    </div>
+    
 </Layout>
