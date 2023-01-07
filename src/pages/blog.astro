@@ -2,6 +2,7 @@
 import type {Post} from '../types';
 import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
+import { BlogPosts } from "../components/Projects";
 import '../styles/blog.css'
 import Header from '../components/Header.astro';
 const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
@@ -10,7 +11,9 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     (a,b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
+    
    )
+   
 ---
 
 <Layout title="/blogs">
@@ -35,7 +38,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
 <p class="text-3xl font-bold">Read my blogs written in md !</p>
 
 <div class="flex flex-col">
-  
+ <BlogPosts  posts={posts} client:load />
 </div>
 </main>
 </Layout>
