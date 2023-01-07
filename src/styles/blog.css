@@ -6,3 +6,9 @@
 	font-family: 'Hanken Grotesk', sans-serif;
 	box-sizing: border-box;
 }
+
+
+.para{
+	position: absolute;
+	margin-top: 2em;
+}

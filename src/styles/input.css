@@ -1,11 +1,11 @@
-.main{
-    margin-top: 3em;
+.input-main{
+    
 }
 
 
 
 input{
-    
+    margin-top: 9em; 
     padding: 6px 12px;
     background: rgb(31, 32, 35);
     border: 1px solid rgb(60, 63, 68);

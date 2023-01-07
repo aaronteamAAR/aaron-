@@ -59,7 +59,7 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
   }, [query]);
 
   return (
-    <div>
+    <>
       <input
         type="text"
         name="search"
@@ -114,6 +114,6 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
           />
         ))
       )}
-    </div>
+    </>
   );
 };

@@ -1,11 +1,19 @@
 ---
 import Layout from "./Layout.astro";
-
-
-const {frontmatter} = Astro.props;
 // console.log(frontmatter)
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate: string;
+    readingTime: string;
+  };
+}
+const {
+  content: { title, description, pubDate, readingTime },
+} = Astro.props;
 ---
 
-<Layout title={frontmatter.title}>
-<slot />
+<Layout title={title}>
+    <slot />
 </Layout>
