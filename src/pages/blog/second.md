@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
-title: "Fuzzy search"
-description: "Nexdle is a wordle clone made with React, TypeScript, TailwindCSS, Vite, Zustand and tested with Vitest."
-pubDate: "March 21, 2022"
+title: "Searching for a remote job, Yes or No?"
+description: "After a year in tech i finally decided it's time i search for jobs to earn more to promote my business ideas."
+pubDate: "Jan 6, 2023"
 ---

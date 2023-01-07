@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import { Blog } from "./Blog";
 import type { Post } from "../types";
+import '../styles/input.css'
 
 type Result = {
   item: Post;
@@ -58,7 +59,7 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
   }, [query]);
 
   return (
-    <>
+    <div>
       <input
         type="text"
         name="search"
@@ -68,7 +69,6 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
         autoComplete="off"
         ref={inputRef}
         onChange={(event) => setQuery(event.target.value)}
-        className="w-full px-4 py-2 text-(neutral-200 lg) placeholder:text-neutral-400  bg-neutral-800 rounded-xl focus:(outline-none ring-2 ring-vitesseGreen) mb-6"
       />
 
       {results ? (
@@ -86,7 +86,7 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
         ) : (
           <>
             <span className="text-(xl neutral-300) p-4">
-              No posts found. Maybe try one of these instead?
+              I really have no idea on what you are looking for. Maybe try one of these instead?
             </span>
 
             <div className="pb-6" />
@@ -114,6 +114,6 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
           />
         ))
       )}
-    </>
+    </div>
   );
 };
