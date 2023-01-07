@@ -11,7 +11,7 @@
 
 .more_content{
     position: absolute;
-    top: 87.5em;
+    top: 69.5em;
     left: 35em;
     text-decoration: underline;
     color: var(--light-dark);
@@ -28,7 +28,7 @@
     }
 
     .more_content{
-        top: 181.25em;
+        top: 143.25em;
         left: 11em;
     }
 }
@@ -44,7 +44,7 @@
 
     .more_content{
         padding-bottom: 23em;
-        top: 100em;
+        top: 76em;
         left: 21em;
     }
 } 

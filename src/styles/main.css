@@ -21,7 +21,7 @@
     left: calc(50.00% - 33.75em);
     position: absolute;
     top: calc(50.00% - 12.125em);
-    width: 470px;
+    width: 29.375em;
 }
 
 .group2{
@@ -55,8 +55,8 @@
     height: auto;
     justify-content: center;
     position: relative;
-    top: calc(50.00% - 165px);
-    width: 250px;
+    top: calc(50.00% - 10.313em);
+    width: 15.625em;
 }
 
 .card_title{
@@ -80,7 +80,7 @@
 
 @media  screen and (max-width:600px) {
     .group1{
-        left: calc(50.00% - 150px);
+        left: calc(50.00% - 9.375em);
         top: 23em;
         margin-top: -12em;
     }
@@ -109,7 +109,7 @@
 
 @media screen and (min-width:481px) and (max-width:900px) {
     .group1{
-        left: calc(50.00% - 276px);
+        left: calc(50.00% - 17.25em);
     }
 
     .group2{
