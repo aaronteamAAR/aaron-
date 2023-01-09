@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+import Header from '../components/Header.astro';
+import axios from 'axios'
+
+
+
+
+---
+
+
+<Layout>
+    <Logo />
+    
+    <Header links={[
+        {
+        href: '/blog',
+        title: "Blog"
+    },
+    {
+        href: 'https://github.com/aaronteamAAR/',
+        title: "Projects"
+    },
+    {
+        href:'/',
+        title: "go back !"
+    }
+    ]
+    } />
+
+  <div>
+   
+  </div>
+</Layout>
