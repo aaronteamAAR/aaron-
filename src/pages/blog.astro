@@ -5,14 +5,15 @@ import Logo from '../components/Logo.astro';
 import { BlogPosts } from "../components/Projects";
 import '../styles/blog.css'
 import Header from '../components/Header.astro';
+
+//sort post according to date of publish 
 const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
-   .filter((post) => !post.frontmatter.draft)
-   .sort(
-    (a,b) =>
-    new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
-    
-   )
+    .filter((post) => !post.frontmatter.draft)
+    .sort(
+     (a,b) =>
+     new Date(b.frontmatter.pubDate).valueOf() -
+     new Date(a.frontmatter.pubDate).valueOf()
+        )
    
 ---
 
@@ -25,7 +26,7 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
   },
   {
     href: '/projects',
-    title: "Projects"
+    title: "✨Projects"
   },
       {
     href:'/jokes',

@@ -57,7 +57,7 @@ export const BlogPosts = ({ posts }: { posts: Post[] }) => {
       history.pushState(null, "", window.location.pathname);
     }
   }, [query]);
-
+   
   return (
     <>
       <input

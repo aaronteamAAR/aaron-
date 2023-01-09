@@ -23,8 +23,19 @@
 	margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 48rem;
+    width: 48rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 3rem;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+	.desc{
+		width: 100%;
+		margin-top: 2em;
+		margin-left: 12em ;
+	}
 }
