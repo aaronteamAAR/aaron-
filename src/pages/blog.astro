@@ -34,11 +34,11 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
   }
   ]
   }/>
-<main class="max-w-6xl lg:ml-auto lg:mr-auto mr-5 ml-5">
+<main class="max-w-6xl  lg:ml-auto lg:mr-auto mr-5 ml-5 sm:mx-[5em] ">
   
 <p class="para text-3xl font-bold">Read my blogs written in md !</p>
 
-<div class="flex flex-col">
+<div class="flex flex-col sm: w-full mx-[5em]">
  <BlogPosts  posts={posts} client:load />
 </div>
 </main>
