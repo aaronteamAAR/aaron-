@@ -3,11 +3,18 @@
 //code gotten from @dreyfuse92
 ---
 
-<script>
+<script type="module">
     import { animate, scroll } from "motion";
     scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
   </script>
   
+  
+  <svg width="50" height="50" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="30" pathLength="1" class="bg"></circle>
+    <circle cx="50" cy="50" r="30" pathLength="1" class="progress"></circle>
+  </svg>
+
+
   <style>
     svg {
       position: fixed;
@@ -32,7 +39,3 @@
     }
   </style>
   
-  <svg width="50" height="50" viewBox="0 0 100 100">
-    <circle cx="50" cy="50" r="30" pathLength="1" class="bg"></circle>
-    <circle cx="50" cy="50" r="30" pathLength="1" class="progress"></circle>
-  </svg>

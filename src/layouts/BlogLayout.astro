@@ -1,6 +1,9 @@
 ---
 import Layout from "./Layout.astro";
+import Logo from "../components/Logo.astro";
+import Header from "../components/Header.astro";
 import '../styles/blog.css'
+import ProgressTracker from "../components/ProgressTracker.astro";
 // console.log(frontmatter)
 export interface Props {
   content: {
@@ -16,6 +19,23 @@ const {
 ---
 
 <Layout title={title}>
+  <Logo />
+  <Header links={[
+    {
+    href: '/blog',
+    title: "Blog"
+},
+{
+    href: 'https://github.com/aaronteamAAR/',
+    title: "Projects✨"
+} ,
+{
+    href:'/',
+    title: "go back !"
+}
+]
+} />
+  <ProgressTracker />
     <div class="desc flex flex-col items-center text-center">
         <h1 class="h1_text">{title}</h1>
         <p class="text-lg text-lightdark font-semibold">
