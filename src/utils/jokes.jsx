@@ -1,23 +1,38 @@
 import axios from 'axios'
-import {React, useState, useEffect} from 'react'
+import '../styles/jokes.css'
+import React from  'react';
+import {useState, useEffect} from 'react'
 
 
 
 export default function Jokes(){
-
-    const getJokes = () => {
-        axios.get("https://official-joke-api.appspot.com/jokes/programming/ten")
-        .then(res => {
-            const setup =  res.data[0].setup
-            const punchline = res.data[0].punchline
+    const [post, setPost] = useState('')
+  
+    useEffect(() => {
+        axios.get("https://official-joke-api.appspot.com/jokes/random")
+        .then(response => { 
+            console.log(response.data[0].setup)
+            setPost(response.data)
        })
         .catch(error  => {
          console.log(error.message)
        })
-    }
-
-    useEffect(() => {
-        getJokes()
     }, [])
+
+
+    return(
+        <div>
+      {post ? 
+      <div>
+        <h1>jokes</h1>
+        <span>
+            {JSON.stringify(post, null, 2)}
+        </span>
+      </div>
+      : 
+      <div>Loading.....</div>}
+      </div>
+
+    )
   
 }
