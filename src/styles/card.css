@@ -1,4 +1,4 @@
-
+/* 
 
 .projects{
     display: flex;
@@ -48,13 +48,4 @@
         left: 21em;
     }
 } 
-
-/* @media screen and (max-width: 900px){
-    .projects{
-        left: 3em;
-    }
-
-    .more_content{
-        left: 24em;
-    }
-} */
+ */

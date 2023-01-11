@@ -12,7 +12,7 @@ import '../styles/navbar.css'
 const props = Astro.props as Props
 ---
 
-<div class="navbar1 flex flex-row gap-2 md:gap-5 mr-5">
+<div class="navbar1 flex flex-row gap-2 w-full md:gap-5 mr-5">
     {props.links.map((link) => (
       <a href={link.href} >
         {link.title}

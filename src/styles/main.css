@@ -13,7 +13,7 @@
     --font-size-xxxxxxl: 100px;
 }
 
-
+/* 
 
 .group1{
     background-color: transparent;
@@ -74,11 +74,11 @@
     left: -1em;
     text-align: center;
     width: 100%;
-}
+} */
 
-/* Mobile view  */
 
-@media  screen and (max-width:600px) {
+
+/* @media  screen and (max-width:600px) {
     .group1{
         left: calc(50.00% - 9.375em);
         top: 23em;
@@ -105,7 +105,7 @@
     }
 }
 
-/* Tablet view  */
+
 
 @media screen and (min-width:481px) and (max-width:900px) {
     .group1{
@@ -117,16 +117,6 @@
         left: 10%;
     }
 }
+ */
 
 
-
-/* @media screen and (max-width: 900px) {
-    .group1{
-        top: calc(50.00% - 488px);
-        left: calc(50.00% - 256px);
-    }
-
-    .group2{
-        left: 10%;   
-    }
-} */

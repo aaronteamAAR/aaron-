@@ -9,7 +9,7 @@ import '../styles/main.css'
 ---
 
 <Layout title="	Home -> aaronspace.studio">
-	<main>
+	<div class="max-w-7xl  flex flex-col justify-center ">
 		<Logo />
 		<Header links={[
 			{
@@ -27,46 +27,48 @@ import '../styles/main.css'
 		]
 		}/>
 		<!-- content  -->
-		<div class="group1">
-			<div class="sub-desc">yo i'm aaron👋🏿</div>
-			<h1 class="desc-h1">software developer</h1>
-			<span class="desc-text">
-				"i'm 19, a backend developer with few years of experience working with various technologies, i play around with front-end too, i consider myself a <b>thinker</b>, i love psychology and i create some thought about life myself"
-			</span>
-		</div>
-		<div class="group2">
-			<div class="card">
-				<div class="card_details">
-					<img src="./images/design1.png" alt="design logo" width="160px">
+		<div class="mx-[13em] ">
+			<div class="group1 ">
+				<div class="sub-desc font-bold  ">yo i'm aaron👋🏿</div>
+				<h1 class="desc-h1 text-6xl">software developer</h1>
+				<span class="desc-text">
+					"i'm 19, a backend developer with few years of experience working with various technologies, i play around with front-end too, i consider myself a <b>thinker</b>, i love psychology and i create some thought about life myself"
+				</span>
+			</div>
+			<div class="group2 flex flex-row my-[6em]  ">
+				<div class="card ">
+					<div class="card_details">
+						<img src="./images/design1.png" alt="design logo" width="160px">
+					</div>
+					<div class="card_div">
+						<h3 class="card_title font-bold text-1xl mx-6">critical thinking</h3>
+						<span class="card_text ">I posses the ability to think outside the box on issues am placed with, i like to view the world from different ascept and i don't cease to evolve</span>
+					</div>
 				</div>
-				<div class="card_div">
-					<h3 class="card_title">critical thinking</h3>
-			        <span class="card_text">I posses the ability to think outside the box on issues am placed with, i like to view the world from different ascept and i don't cease to evolve</span>
+				<div class="card">
+					<div class="card_details">
+						<img src="./images/design2.png" alt="design logo" width="160px">
+					</div>
+					<div class="card_div">
+						<h3 class="card_title font-bold text-1xl mx-6">Adventerous</h3>
+						<span class="card_text">Trying out new things and learn from different experiences could possibly be a hobby for me , i dervie joy in exploring repos and github and learning from each one.</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_details">
+						<img src="./images/design3.png" alt="design logo" width="160px">
+					</div>
+					<div class="card_div">
+						<h3 class="card_title font-bold text-1xl mx-6">Ready to learn</h3>
+						<span class="card_text">I'm always trying my very best to learn new concepts about literally any and everything i can lay my hands upon, <b>daily</b></span>
+					</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="card_details">
-					<img src="./images/design2.png" alt="design logo" width="160px">
-				</div>
-				<div class="card_div">
-					<h3 class="card_title">Adventerous</h3>
-			        <span class="card_text">Trying out new things and learn from different experiences could possibly be a hobby for me , i dervie joy in exploring repos and github and learning from each one.</span>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card_details">
-					<img src="./images/design3.png" alt="design logo" width="160px">
-				</div>
-				<div class="card_div">
-					<h3 class="card_title">Ready to learn</h3>
-			        <span class="card_text">I'm always trying my very best to learn new concepts about literally any and everything i can lay my hands upon, <b>daily</b></span>
-				</div>
-			</div>
+			<Card />
+		<Footer />
 		</div>
 		
-	</main>
-	<Card />
-	<Footer />
+	</div>
 </Layout>
 
 <style>
