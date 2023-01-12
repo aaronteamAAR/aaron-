@@ -1,7 +1,7 @@
 ---
 import Layout from "./Layout.astro";
 import Logo from "../components/Logo.astro";
-import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
 import '../styles/blog.css'
 import ProgressTracker from "../components/ProgressTracker.astro";
 // console.log(frontmatter)
@@ -20,7 +20,7 @@ const {
 
 <Layout title={title}>
   <Logo />
-  <Header links={[
+  <Navbar links={[
     {
     href: '/blog',
     title: "Blog"

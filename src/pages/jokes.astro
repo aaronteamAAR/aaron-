@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
-import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
 import '../styles/jokes.css'
 
 // fetching jokes from jokes api 
@@ -18,7 +18,7 @@ const jokesPunchline = data.punchline
 <Layout>
     <Logo />
     
-    <Header links={[
+    <Navbar links={[
         {
         href: '/blog',
         title: "Blog"
