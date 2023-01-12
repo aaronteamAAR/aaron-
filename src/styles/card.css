@@ -1,3 +1,14 @@
+.more_content{
+    position: absolute;
+    top: 67.5em;
+    left: 21rem;
+    text-decoration: underline;
+    color: var(--light-dark);
+    font-size: var(--font-size-l);
+}
+
+
+
 /* 
 
 .projects{
@@ -9,14 +20,7 @@
     gap: 7em;
 }
 
-.more_content{
-    position: absolute;
-    top: 69.5em;
-    left: 35em;
-    text-decoration: underline;
-    color: var(--light-dark);
-    font-size: var(--font-size-l);
-}
+
 
 
 

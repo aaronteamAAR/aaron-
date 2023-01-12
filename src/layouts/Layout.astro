@@ -4,7 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-
+import Logo from '../components/Logo.astro';
 ---
 
 <!DOCTYPE html>
@@ -16,9 +16,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		
-
+	<body class="mx-auto">
+		<header>
+			<Logo />
+		</header>
 		<slot />
 	</body>
 </html>
@@ -36,7 +37,7 @@ const { title } = Astro.props;
     --font-size-xxxxxxl: 100px;
 }
 	*{
-	font-family: 'Hanken Grotesk', sans-serif;
+	font-family: 'Hanken Grotesk','Circular Spotify Text', sans-serif;
 	box-sizing: border-box;
 }
 </style>

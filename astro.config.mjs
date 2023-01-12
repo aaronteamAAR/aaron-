@@ -14,13 +14,11 @@ const layoutOptions = {
 }
 
 export default defineConfig({
-
-
     markdown: {
       extendDefaultPlugins: true,
       remarkPlugins: [[astroLayouts, layoutOptions],remarkReadingTime],
        shikiConfig:{
-        theme: "dark-plus"
+        theme: "vitesse-dark"
        },
     },
       integrations: [mdx(),react(), tailwind({
