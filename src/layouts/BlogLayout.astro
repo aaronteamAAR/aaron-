@@ -1,6 +1,5 @@
 ---
 import Layout from "./Layout.astro";
-import Logo from "../components/Logo.astro";
 import Navbar from "../components/Navbar.astro";
 import '../styles/blog.css'
 import ProgressTracker from "../components/ProgressTracker.astro";
@@ -21,7 +20,6 @@ const {
 ---
 
 <Layout title={title}>
-  <Logo />
   <Navbar links={[
     {
     href: '/blog',
@@ -37,8 +35,9 @@ const {
 }
 ]
 } />
-  <ProgressTracker />
+  
   <main class="flex flex-col items-center">
+    <ProgressTracker />
     <div class="w-[350px] md:w-[750px]">
     <h1 class="text-4xl font-bold mb-4">{title}</h1>
     <div class="flex gap-4">
