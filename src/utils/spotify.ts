@@ -1,6 +1,4 @@
 //Code from @dreyfuse92
-
-
 type Artist = {
     name: string,
     images: { url: string }[],
