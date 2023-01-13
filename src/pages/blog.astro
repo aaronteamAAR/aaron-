@@ -18,8 +18,6 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
 ---
 
 <Layout title="/blogs">
-  
-<main class="max-w-4xl mt-8 lg:mr-auto lg:ml-auto mr-5 ml-5 sm:mx-[5em] ">
   <Navbar links={[
     {
     href: '/',
@@ -34,7 +32,8 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
     title: "jokes"
   }
   ]
-  }/>
+  }/>  
+<main class="max-w-4xl mt-8 lg:mr-auto lg:ml-auto mr-5 ml-5 sm:mx-[5em] ">
   
 <p class="para text-3xl font-bold">Read my blogs written in md !</p>
 

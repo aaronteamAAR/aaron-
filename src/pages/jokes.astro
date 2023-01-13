@@ -2,22 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
 import Navbar from '../components/Navbar.astro';
-import '../styles/jokes.css'
-
 // fetching jokes from jokes api 
+
+
 const response = await fetch("https://official-joke-api.appspot.com/jokes/random")
 
 const data = await response.json()
 const jokesSetup = data.setup
 const jokesPunchline = data.punchline
 
-
 ---
 
 
 <Layout>
     <Logo />
-    
     <Navbar links={[
         {
         href: '/blog',
@@ -33,16 +31,13 @@ const jokesPunchline = data.punchline
     }
     ]
     } />
-
-  <div class="flex flex-col text-center my-8 md:absolute w-full justify-center sm: mx-[5em]">
-    <div class="justify-center m-8">
+  <main class="max-w-4xl mt-8 lg:mr-auto lg:ml-auto mr-5 ml-5 sm:mx-[5em] ">
+    <div class="justify-center">
         <h1>{jokesSetup}</h1>
         <h2>{jokesPunchline}</h2>
     </div>
-
     <div>
         <span>Yes, you got it right! this page is for weird programming jokes</span>
     </div>
-
-  </div>
+  </main>
 </Layout>
