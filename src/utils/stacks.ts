@@ -30,10 +30,10 @@ const technologies = [
         link: 'https://reactjs.org/',
     },
     {
-        name: 'TypeScript',
-        imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png',
-        altSrc: 'TypeScript Logo',
-        link: 'https://www.typescriptlang.org/',
+        name: 'Ruby',
+        imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg',
+        altSrc: 'Ruby Logo',
+        link: 'https://www.ruby-lang.org/en/',
 
     },
     {
