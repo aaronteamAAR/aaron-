@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SpotifyNow from '../components/SpotifyNow.astro';
 import TechBadge from "../components/TechBadge.astro";
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
@@ -37,6 +38,7 @@ interface TechBadgeProps {
 		<!-- content  -->
 		<div class="w-[700px] mx-auto md:w-[800px]">
 			<Logo />
+			
 			<Navbar links={[
 				{
 				href: '/blog',
@@ -52,6 +54,7 @@ interface TechBadgeProps {
 			}
 			]
 			}/>
+			<SpotifyNow />
 			<div class="mt-4 mx-auto text-left w-2/3 md:mx-0">
 				<div class="font-semibold">yo i'm aaron👋🏿</div>
 				<h1 class="text-8xl font-bold mb-4 md:mb-8">software developer</h1>
