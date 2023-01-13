@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import TechBadge from "../components/TechBadge.astro";
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
-import { technologies } from "../utils/stacks.ts";
+import { technologies } from "../utils/stacks";
 import Logo from '../components/Logo.astro';
 import Navbar from '../components/Navbar.astro';
 import '../styles/main.css'
@@ -18,7 +18,7 @@ interface TechBadgeProps {
 ---
 
 
-<script type="module">
+<script>
 	import { animate } from "motion";
 	const pfp = document.getElementById("pfp-1") as Element;
 	animate(
