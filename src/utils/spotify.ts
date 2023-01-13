@@ -20,10 +20,10 @@ export type NowPlayingTrackResponse = {
 // Get access token from Spotify
 export const getAccessToken = async () => {
     // Get environment variables
-    const refresh_token ='AQB_VWqQOhFnu1fuN8KIQVAUBY_jOlCvDG9B5A0nZUUTq7asM32PdgVEBAUIaDMBRg7AzNGCfDkpiP2qAHgPDHnyUa3Bqrqdr5nKhZoGlpZ2DvA3bcOQyEx_sd1BW8eI7h0';
-    const client_id = '53df0ab0415347259dcb6ddbe587ed1f';
+    const refresh_token = import.meta.env.SPOTIFY_REFRESH_TOKEN;
+    const client_id = import.meta.env.SPOTIFY_CLIENT_ID;
     
-    const client_secret ='3997201f0a5f4c9cbdae15e447a497f4';
+    const client_secret = import.meta.env.SPOTIFY_CLIENT_SECRET;
 
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64")
     const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
