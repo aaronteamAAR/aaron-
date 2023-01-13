@@ -1,8 +1,10 @@
 ---
 export interface Props {
+  class:string;
     links: {
         title: string;
         href: string;
+        
     }[
 
     ],
@@ -12,7 +14,7 @@ import '../styles/navbar.css'
 const props = Astro.props as Props
 ---
 
-<div class="navbar1 flex flex-row justify-end gap-2 mr-14 md:gap-5 mr-5">
+<div class="navbar1 flex flex-row justify-end gap-4 mr-14 md:gap-5 mr-5">
     {props.links.map((link) => (
       <a href={link.href} >
         {link.title}

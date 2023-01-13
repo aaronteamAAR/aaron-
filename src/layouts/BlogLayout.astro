@@ -38,15 +38,19 @@ const {
 ]
 } />
   <ProgressTracker />
-    <div class="desc flex flex-col items-center text-center">
-        <h1 class="h1_text">{title}</h1>
-        <p class="text-lg text-lightdark font-semibold">
-          {description}
-        </p>
-        <p class="text-sm">{pubDate} - {readingTime}</p>
+  <main class="flex flex-col items-center">
+    <div class="w-[350px] md:w-[750px]">
+    <h1 class="text-4xl font-bold mb-4">{title}</h1>
+    <div class="flex gap-4">
+      <p class="text-sm">{pubDate}</p>
+      <p class="text-sm">{readingTime}</p>
     </div>
-    <div class="main-blog">
-        <slot />
+    <hr class="mt-5 mb-10" />
+    <article>
+      <slot />
+    </article>
     </div>
-    
+  </main>
+   
+ 
 </Layout>
