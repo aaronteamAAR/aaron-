@@ -1,3 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "complierOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "isolatedModules": true
+  }
 }

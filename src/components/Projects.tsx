@@ -1,6 +1,7 @@
 // credit: https://github.com/nexxeln/nexxel.dev/blob/main/src/pages/blog.astro
 
 import { useEffect, useRef, useState } from "react";
+import React from  'react';
 import Fuse from "fuse.js";
 import { Blog } from "./Blog";
 import type { Post } from "../types";

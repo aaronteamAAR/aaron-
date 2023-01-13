@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
 import { BlogPosts } from "../components/Projects";
 import '../styles/blog.css'
-import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
 
 //sort post according to date of publish 
 const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
@@ -18,11 +18,12 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
 ---
 
 <Layout title="/blogs">
-  <Logo />
-  <Header links={[
+  
+<main class="max-w-4xl mt-8  lg:mr-auto lg:ml-auto mr-5 ml-5 sm:mx-[5em] ">
+  <Navbar links={[
     {
-    href: '/blog',
-    title: "Blog"
+    href: '/',
+    title: "Home"
   },
   {
     href: '/projects',
@@ -34,12 +35,11 @@ const posts = (await Astro.glob<Post>("./blog/*.{md,mdx}"))
   }
   ]
   }/>
-<main class="max-w-6xl  lg:ml-auto lg:mr-auto mr-5 ml-5 sm:mx-[5em] ">
   
 <p class="para text-3xl font-bold">Read my blogs written in md !</p>
 
-<div class="flex flex-col sm: w-full mx-[5em]">
- <BlogPosts  posts={posts} client:load />
+<div class="flex flex-col ml-auto sm: w-full mx-[5em]">
+ <BlogPosts posts={posts} client:load />
 </div>
 </main>
 </Layout>

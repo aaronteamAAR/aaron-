@@ -21,7 +21,7 @@ export default defineConfig({
         theme: "vitesse-dark"
        },
     },
-      integrations: [mdx(),react(), tailwind({
+      integrations: [mdx(),react(),tailwind({
         config: { path: './tailwind.config.cjs' },
         plugins: [daisyui],
       })],

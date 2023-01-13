@@ -1,9 +1,4 @@
 import '../styles/input.css'
-
-
-
-//imports go up above
-
 export interface Props {
     title: string;
     description: string;
