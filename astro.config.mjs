@@ -3,6 +3,7 @@ import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import daisyui from 'daisyui'
+import cloudflare from '@astrojs/cloudflare';
 import CodeTitle from "remark-code-title"
 import astroLayouts from "astro-layouts"
 import { remarkReadingTime } from './src/utils/reading-time.mjs';
@@ -14,6 +15,8 @@ const layoutOptions = {
 }
 
 export default defineConfig({
+  output: 'server',
+  adapter: cloudflare({mode: "directory"}),
     markdown: {
       extendDefaultPlugins: true,
       remarkPlugins: [[astroLayouts, layoutOptions],remarkReadingTime],

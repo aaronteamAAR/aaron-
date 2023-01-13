@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^5.0.0",
     "@astrojs/mdx": "^0.14.0",
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^2.1.3",
