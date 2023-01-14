@@ -39,7 +39,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 This app requires Node.js v16.15.0 or later.
 
 ```bash
-git clone git@github.com:aaronteamAAR /aaron-.git
+git clone git@github.com:aaronteamAAR/aaron-.git
 cd aaron-
 npm i
 npm run dev
