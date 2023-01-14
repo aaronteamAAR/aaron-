@@ -6,7 +6,6 @@ import daisyui from 'daisyui'
 import cloudflare from '@astrojs/cloudflare';
 import CodeTitle from "remark-code-title"
 import astroLayouts from "astro-layouts"
-import sitemap from '@astrojs/sitemap';
 import { remarkReadingTime } from './src/utils/reading-time.mjs';
 // https://astro.build/config
 
@@ -16,7 +15,6 @@ const layoutOptions = {
 }
 
 export default defineConfig({
-  site: 'https://aaronchris.pages.dev',
   output: 'server',
   adapter: cloudflare({mode: "directory"}),
     markdown: {
@@ -26,7 +24,7 @@ export default defineConfig({
         theme: "vitesse-dark"
        },
     },
-      integrations: [sitemap(),mdx(),react(),tailwind({
+      integrations: [mdx(),react(),tailwind({
         config: { path: './tailwind.config.cjs' },
         plugins: [daisyui],
       })],
