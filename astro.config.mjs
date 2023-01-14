@@ -16,6 +16,7 @@ const layoutOptions = {
 }
 
 export default defineConfig({
+  site: 'https://aaronchris.pages.dev/',
   output: 'server',
   adapter: cloudflare({mode: "directory"}),
     markdown: {
