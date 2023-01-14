@@ -6,7 +6,7 @@ import daisyui from 'daisyui'
 import cloudflare from '@astrojs/cloudflare';
 import CodeTitle from "remark-code-title"
 import astroLayouts from "astro-layouts"
-// import sitemap from '@astrojs/sitemap';
+import sitemap from '@astrojs/sitemap';
 import { remarkReadingTime } from './src/utils/reading-time.mjs';
 // https://astro.build/config
 
@@ -16,7 +16,7 @@ const layoutOptions = {
 }
 
 export default defineConfig({
-  // site: 'https://aaronchris.pages.dev'
+  site: 'https://aaronchris.pages.dev',
   output: 'server',
   adapter: cloudflare({mode: "directory"}),
     markdown: {

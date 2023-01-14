@@ -1,11 +1,14 @@
-# Welcome to [Astro](https://astro.build)
+# My simple website built with Astro
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+![screenshot](/public/images/screenshot.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📚 Stack
 
-![basics](https://aaronchris.pages.dev/)
+- Platform: [Astro](https://astro.build/)
+- Deployment: [Cloudflare Pages](https://pages.cloudflare.com/)
+- Package manager: [npm](https://npmjs.com/)
+- CSS: [Tailwind CSS](https://tailwindcss.com/)
+- TailwindComponents: [Daisy CSS](https://daisyui.com/)
 
 
 ## 🚀 Project Structure
@@ -18,11 +21,9 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
 │   ├── layouts/
-│   │   └── Layout.astro
+│   ├── utils/
 │   └── pages/
-│       └── index.astro
 └── package.json
 ```
 
