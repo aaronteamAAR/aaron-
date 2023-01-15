@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import vercel from '@astrojs/vercel/serverless';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import daisyui from 'daisyui'
@@ -18,7 +19,7 @@ const layoutOptions = {
 export default defineConfig({
   site: 'https://aaronchris.pages.dev/',
   output: 'server',
-  adapter: cloudflare({mode: "directory"}),
+  adapter: vercel(),
     markdown: {
       extendDefaultPlugins: true,
       remarkPlugins: [[astroLayouts, layoutOptions],remarkReadingTime],

@@ -16,6 +16,7 @@
     "@astrojs/react": "^1.2.2",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.3",
+    "@astrojs/vercel": "^2.4.0",
     "@types/node": "^18.11.18",
     "astro": "^1.6.8",
     "astro-icon": "^0.8.0",
