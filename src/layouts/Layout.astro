@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import { inject } from '@vercel/analytics';
 import Meta from '../components/MetaTag.astro'
+import SpotifyNow from '../components/SpotifyNow.astro';
 ---
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ import Meta from '../components/MetaTag.astro'
 		<title>{title}</title>
 	</head>
 	<body class="mx-auto">
+		<SpotifyNow />
 		<slot />
 	</body>
 	<script defer src="/_vercel/insights/script.js"></script>
