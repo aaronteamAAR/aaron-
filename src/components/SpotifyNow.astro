@@ -2,7 +2,6 @@
 import type { NowPlayingTrackResponse } from "../utils/spotify";
 import { get } from "../utils/spotify";
 
-
 const nowPlayingTrack = await get();
 const result = (await nowPlayingTrack.json()) as NowPlayingTrackResponse;
 ---
