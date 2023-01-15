@@ -18,7 +18,7 @@ const result = (await nowPlayingTrack.json()) as NowPlayingTrackResponse;
         rel="noreferrer noopener flex"
         class="flex items-center justify-around hover:text-gray-900"
       >
-      <Svg />
+      <Svg is:raw />
         <p class="hover:text-gray-900 p-3">
           {result.title} - {result.artist}
         </p>
@@ -30,7 +30,7 @@ const result = (await nowPlayingTrack.json()) as NowPlayingTrackResponse;
         rel="noreferrer noopener flex"
         class="flex items-center justify-around hover:text-gray-900"
       >
-<Svg />
+<Svg is:raw/>
         <p class=" hover:text-gray-900 p-3">I'm busy not playing</p>
       </a>
     )
