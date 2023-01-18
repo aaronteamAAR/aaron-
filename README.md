@@ -5,7 +5,7 @@
 ## 📚 Stack
 
 - Platform: [Astro](https://astro.build/)
-- Deployment: [Cloudflare Pages](https://pages.cloudflare.com/)
+- Deployment: [vercel](https://vercel.com/)
 - Package manager: [npm](https://npmjs.com/)
 - CSS: [Tailwind CSS](https://tailwindcss.com/)
 - TailwindComponents: [Daisy CSS](https://daisyui.com/)
