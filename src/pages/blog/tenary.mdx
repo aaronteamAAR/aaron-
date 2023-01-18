@@ -9,30 +9,33 @@ Ternary if statements are a shorthand way of writing an if-else statement in a s
 
 The syntax for a ternary if statement is as follows:
 
-'''js
-variable = (condition) ? value_if_true : value_if_false
-
-'''
+```js
+variable = (condition) ? value_if_true : 
+```
 For example, let's say you want to assign a variable called "status" the value "approved" if a certain condition is true, and "denied" if it is false. You could use the following ternary if statement to accomplish this:
 
-'''js
+```js
 status = (approval_status == "approved") ? "approved" : "denied"
-You can also use ternary if statement in cases like :
-'''
+
+```
+
+You can also use ternary if statement in cases 
 
 
-'''js
+
+```js
 age >= 18 ? "Adult" : "Minor"
 
-'''
+```
+
 In this example, if the value of the "age" variable is greater than or equal to 18, the variable "status" will be assigned the value "Adult", otherwise it will be assigned the value "Minor".
 
 It's also important to keep in mind that ternary if statements can be nested, which can help make your code more readable. For example, you could use a ternary if statement inside another ternary if statement to check multiple conditions.
 
-'''js
-result = (x > y) ? (x > z) ? "x is greater" : "z is greater" : (y > z) ? "y is greater" : "z is greater"
+```js
+result = (x > y) ? (x > z) ? "x is greater" : "z is greater" : (y > z) ? "y is greater" : "z is greatwr
 
-'''
+```
 
 This way of writing the code makes it more readable and shorter.
 
